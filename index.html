@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Liberty Tours Belize</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!--link naar mijn eigen css-->
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--lettertype van Google fonts - roboto-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+<p id="par1" class="par1"/>
+<!--NEWS BUTTON-------------------------------------------------------------------------------------------------------->
+<a class="nav-link news" href="#news" data-toggle="modal"
+   data-target="#news"><img src="img/newsbutton.png"></a>
+
+<!--MODAL NEWS--------------------------------------------------------------------------------------------------------->
+<div class="modal fade" id="news">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="newsCard"><i class="far fa-newspaper"></i>NEWS</h4>
+
+                <button type="button" class="close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>2020-03-18</p>
+                <img class="img-fluid" src="img/mainOffice.jpg" alt="mainoffice">
+
+                <p class="h6 mt-2">Our new main office is now open! <br>Gift Shop now open Avenida Langosta across from
+                    the
+                    Credit Union.
+                    We also have an office on Avenida Hicaco on front street for your convenience
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- NAVIGATIE--------------------------------------------------------------------------------------------------------->
+
+<div class="container-fluid mb-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand-lg bg-dark fixed-top"><!--navbar blijft fixed op de top van de pagina-->
+
+                <a class="navbar-brand d-none d-md-inline-flex" href="#par1">Liberty Tours Belize</a><!--wordt pas getoond vanaf het moment dat het scherm medium is-->
+                <a class="navbar-brand d-md-none" href="#par1">Liberty Tours</a><!--verdwijnt vanaf het moment dat het scherm medium is-->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContend"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon mt-2"><i class="fas fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#par1">Home<span class="sr-only"></span></a> <!--sr-only wil zeggen: alleen voor schermlezers, vb voorleessoftware-->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#par2">Our Tours</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#par3">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="booking.html">BOOK NOW!</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#par4">Gallery</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"
+                               id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Our Friends
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.facebook.com/IceandBeans/" target="_blank">ICE"N" BEANS</a>
+                                <a class="dropdown-item" href="https://www.tripadvisor.be/Restaurant_Review-g291963-d9835937-Reviews-Chef_Juan_s_Kitchen_and_Pastries-Caye_Caulker_Belize_Cayes.html" target="_blank">Chef Juan's</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/fantasydining/" target="_blank">Fantasy</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/pg/J-SONS-Xtreme-Karts-Golf-Cart-Rental-230018510392978/services/?service_id=1331138593621397" target="_blank">J&S golf cart rental</a>
+                                <a class="dropdown-item" href="https://www.facebook.com/CrepesDreams/" target="_blank">Crepes and Dreams</a>
+                                <a class="dropdown-item" href="https://cayecaulkerplazahotel.com/" target="_blank">Plaza Hotel</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn rounded-pill btn-primary" href="#par5">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--ALERT-------------------------------------------------------------------------------------------------------------->
+<div class="container-fluid alert">
+    <div class="row alert align-content-center">
+        <div class="col-sm-12">
+            <div id="accordeon">
+                <div class="card alertline">
+                    <div class="card-header alert2">
+                        <h4 class="mb-0">
+                            <div class="row">
+                                <button class="btn btn-link col-12 alert3" data-toggle="collapse"
+                                        data-target="#covid19">
+                                    <div class="row alert2 alert3">
+                                        <div class="col-1"><i class="fas fa-exclamation-triangle"></i></div>
+                                        <div class=" col-7 col-md-8 text-left"><span>Important information</span></div>
+                                        <div class="col-3 text-right px-2"><i class="fas fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </h4>
+                    </div>
+                    <div id="covid19" class="collapse" data-parent="#accordeon">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Due to the COVID-19 virus currently we are unable to offer refunds on cancellations. Please contact us to rebook
+                                your trip.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--JUMBOTRON---------------------------------------------------------------------------------------------------------->
+<div class="container-fluid my-5 jumbotrontop">
+    <div class="jumbotron">
+        <h1 class="display-4 ml-sm-2 ml-md-3 ml-lg-5">Liberty Tours Belize!</h1>
+        <p class="lead ml-sm-2 ml-md-3 ml-lg-5">Your best Holiday Experience</p>
+        <hr class="hr my-5 mx-5">
+        <p class="ml-sm-2 ml-md-3 ml-lg-5">OUR NEW CATAMARAN IS NOW AVAILABLE ON OVERNIGHT TOURS</p>
+        <p class="lead my-3">
+            <a class="ml-sm-2 ml-md-3 ml-lg-5"
+               href="https://www.tripadvisor.be/Attraction_Review-g291963-d3923287-Reviews-Liberty_Sailing_Tours-Caye_Caulker_Belize_Cayes.html"
+               role="button"><img src="img/TripAdvisor-Review-Us.png"></a>
+        </p>
+    </div>
+</div>
+
+<!--OUR TOURS---------------------------------------------------------------------------------------------------------->
+<p id="par2" class="anchoredpar2"/>
+<div class="ourtours py-5">
+
+    <div class="container">
+
+        <h2 class="titel pb-5">Our Tours</h2>
+        <div class="row">
+            <!--KAART 1------------------------------------------------------------------------------------------------>
+            <div class="col-md-6 col-lg-3 card text-center mx-auto px-3 mb-4">
+                <!--mx=maring-left+right px=padding-left+right py=padding-top+bottom shadow=schaduw rond het element-->
+                <span class="mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-lg">Sailing Trips</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal">from<br><span class="price">$90BZ</span>
+                        <span class="h6 text-muted ml-2">/ pp</span>
+                    </h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4 pb-4">
+                        <li>Min of 2 pp.</li>
+                        <li>Half-day or full-day trips</li>
+                        <li>Amenities included</li>
+                        <li>Bring sunscreen!</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary mb-3" data-toggle="modal"
+                            data-target="#kaart1">View Details
+                    </button>
+                </div>
+            </div>
+            <!--KAART 2------------------------------------------------------------------------------------------------->
+            <div class="col-md-6 col-lg-3 card text-center px-3 mb-4">
+                <!--mx=maring-left+right px=padding-left+right py=padding-top+bottom shadow=schaduw rond het element-->
+                <span class="mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-lg">Overnight Trips</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal">from<br><span class="price">$500BZ</span>
+                        <span class="h6 text-muted ml-2">/ pp</span>
+                    </h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4 pb-4">
+                        <li>Up to 15 pp.</li>
+                        <li>Camping gear included</li>
+                        <li>Meals included</li>
+                        <li>Bring sunscreen!</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary mb-3" data-toggle="modal"
+                            data-target="#kaart2">View Details
+                    </button>
+                </div>
+
+            </div>
+            <!--KAART 3------------------------------------------------------------------------------------------------>
+            <div class="col-md-6 col-lg-3 card card-pricing text-center px-3 mb-4">
+                <!--mx=maring-left+right px=padding-left+right py=padding-top+bottom shadow=schaduw rond het element-->
+                <span class="mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-lg">Fishing</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h1 class="h1 font-weight-normal">from<br><span class="price">$700BZ</span>
+                    </h1>
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4 pb-4">
+                        <li>Fixed rate per boat</li>
+                        <li>Professional bootcrew</li>
+                        <li>All fishing gear included</li>
+                        <li>Bring sunscreen!</li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary mb-3" data-toggle="modal"
+                            data-target="#kaart3">View Details
+                    </button>
+                </div>
+            </div>
+            <!--KAART 4------------------------------------------------------------------------------------------------>
+            <div class="col-md-6 col-lg-3 card card-pricing text-center px-3 mb-4">
+                <!--mx=maring-left+right px=padding-left+right py=padding-top+bottom shadow=schaduw rond het element-->
+                <span class="mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-lg">Private Charter</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <h2 class="h3 font-weight-normal mb-5">Please contact for rates</h2>
+                </div>
+                <div class="card-body pt-0 mt-5">
+                    <ul class="list-unstyled mb-4 pb-4">
+                        <li class="mt-2"></li>
+                        <li class="mt-2"></li>
+                        <li class="mt-2"></li>
+                        <li class="mt-3"></li>
+                    </ul>
+                    <button type="button" class="btn btn-outline-secondary mb-3" data-toggle="modal"
+                            data-target="#kaart4">View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--MODAL KAART 1------------------------------------------------------------------------------------------------------>
+<p id="par3" class="anchoredpar3"/>
+<div class="modal fade" id="kaart1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel1"><i class="fas fa-ship mr-2"></i>Sailing
+                    Trips
+                    <br>
+                    <small class="text-muted">Rates are in Bze dollars: the exchange rate is $2 Bze
+                        to $1 USD</small>
+                </h4>
+
+                <button type="button" class="close" data-dismiss="modal">
+
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <img class="img-fluid" src="img/sailingtrip.jpg" alt="sailtrip on boat">
+                <p>
+                <p class="h6"><b> Sail to LOCAL REEF Caye Caulker Marine Reserve $90 BZ</b></p>
+                <p>Includes: Park Fee, Snorkeling Gear,Water and Fruit
+
+                <p class="h6"><b>Sailing to HOL CHAN Marine Reserve $180 BZ per person</b></p>
+                <p>Includes: Water and punch, Park Fee, Snorkeling Gear, Lunch and Fruit</p>
+
+                <p><span class="badge badge-warning">HOT</span><br><b>Sail to our PRIVATE
+                    ISLAND,</b> return Sunset
+                    Cruise - $900 BZ<br>
+                    Sail to the island and enjoy lunch, Fishing, Snorkeling and Lobster Catching
+                    (seasonal).
+                    We provide a typical Belize Lunch, Water, Rum Punch, and Fruit</p>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="booking.html" class="btn btn-warning" role="button" aria-pressed="true">Book now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL KAART 2------------------------------------------------------------------------------------------------------>
+<div class="modal fade" id="kaart2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel2"><i class="fas fa-ship mr-2"></i>Overnight
+                    Trips
+                    <br>
+                    <small class="text-muted">Rates are in Bze dollars: the exchange rate is $2 Bze
+                        to $1 USD</small>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="img/overnight.jpg" alt="Overnight Trip">
+                <p>
+                <p class="h6"><b>Overnight Camping at Secluded Island $500 BZ per person</b></p>
+                <p>Includes: Camping, Snorkeling, and Fishing Gear, Spear Guns, Water, Fruit and 3
+                    Delicious Meals</p>
+
+                <p class="h6"><b>3 Day Sail to Hopkins $800 BZ per person</b></p>
+                <p>Includes: Camping, Snorkeling, and Fishing Gear, Water with Delicious Meals and
+                    lots of Rum Punch,
+                    water is available</p>
+                <ul>
+                    <li>1st Night - Goff's Caye</li>
+                    <li>2nd Night - Tobacco Caye</li>
+                    <li>3rd Day - Drop off in Hopkins.</li>
+                    <li>We DO NOT offer a return Trip from Hopkins
+                        This is for Safety Reasons due to the Return at Night.
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="booking.html" class="btn btn-warning" role="button" aria-pressed="true">Book now</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL KAART 3------------------------------------------------------------------------------------------------------>
+<div class="modal fade" id="kaart3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel3"><i class="fas fa-ship mr-2"></i>Fishing
+                    <br>
+                    <small class="text-muted">Rates are in Bze dollars: the exchange rate is $2 Bze
+                        to $1 USD</small>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="img/fishing.jpg" alt="fishing">
+                <p>
+                <p class="h6"><b>Deep Sea and Reef Fishing</b></p>
+                <p>Includes: Fishing gear, bait, and lures,
+                    Prices:<br>
+                    Full Day<br>
+                    $900 BZ<br>
+                    Half Day<br>
+                    $700 BZ<br>
+                </p>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="booking.html" class="btn btn-warning" role="button" aria-pressed="true">Book now</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL KAART 4------------------------------------------------------------------------------------------------------>
+<div class="modal fade" id="kaart4">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel4"><i class="fas fa-ship mr-2"></i>Private
+                    Charter
+                    <br>
+                    <small class="text-muted">Rates are in Bze dollars: the exchange rate is $2 Bze
+                        to $1 USD</small>
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="img/privateCharter.jpeg" alt="private chater boat">
+                <p class="mt-2">
+                    We will Assist You in Designing the Perfect Trip for Your Special Occasion
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a href="#par5" class="btn btn-warning" role="button" aria-pressed="true">Contact us</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--REVIEWS MULTI-CAROUSEL----------------BRON:https://mdbootstrap.com/snippets/jquery/ascensus/135508--om meerdere cards tegelijk in een carousel te zetten--------------->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="titel pb-2">Reviews</h2>
+            <hr class="my-2">
+
+            <!--Carousel Wrapper--------------------------------------------------------------------------------------->
+            <div id="multi-item-example" class="carousel slide carousel-multi-item pb-3"
+                 data-ride="carousel">
+
+                <!--Controls------------------------------------------------------------------------------------------->
+                <div class="controls-top">
+                    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                            class="fa fa-chevron-left"></i></a>
+                    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                            class="fa fa-chevron-right"></i></a>
+                </div>
+
+                <!--Indicators----------------------------------------------------------------------------------------->
+                <ol class="carousel-indicators">
+                    <li data-target="#multi-item-example" data-slide-to="0"
+                        class="active btn-secondary"></li>
+                    <li data-target="#multi-item-example" data-slide-to="1"
+                        class="active btn-secondary"></li>
+                    <li data-target="#multi-item-example" data-slide-to="2"
+                        class="active btn-secondary"></li>
+                </ol>
+
+                <!--Slides--------------------------------------------------------------------------------------------->
+                <div class="carousel-inner" role="listbox">
+
+                    <!--First slide------------------------------------------------------------------------------------>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!--KAART REVIEW 1--------------------------------------------------------------------->
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Michele Pankow</h4>
+                                        <p class="card-text">Greg and Dylan were amazing. This was
+                                            the highlight of our
+                                            trip! Thank you for a great day fishing and sailing.
+                                            <a class="" data-toggle="collapse"
+                                               href="#collapseKaart1"
+                                               role="button" aria-expanded="false"
+                                               aria-controls="collapseExample"><i class="text-info">read
+                                                more...</i>
+                                            </a>
+                                        <div class="collapse" id="collapseKaart1">
+                                            The Tom's, Michele, and DeeDee
+                                        </div>
+                                        </p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review1.jpg"
+                                             alt="Card review 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 2--------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Ouass Fertas</h4>
+                                        <p class="card-text pb-4">can't keep up with the promises
+                                            they make. poor
+                                            customer service 😑</p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review2.jpg"
+                                             alt="Card review 2">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 3--------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Mark Levario</h4>
+                                        <p class="card-text">Darvin, Karina and his crew do an
+                                            amazing job of
+                                            accommodating
+                                            their customers. There are lots <a class=""
+                                                                               data-toggle="collapse"
+                                                                               href="#collapseKaart3"
+                                                                               role="button"
+                                                                               aria-expanded="false"
+                                                                               aria-controls="collapseExample"><i
+                                                    class="text-info">read more...</i>
+                                            </a>
+                                        <div class="collapse" id="collapseKaart3">
+                                            of tour options to choose from and he is a local guy,
+                                            not a big company where you are just a number. They go
+                                            the extra mile and
+                                            you can
+                                            get get an amazing view into Mayan history from his
+                                            guys. They will take
+                                            your fish to
+                                            Rosy's and have it cooked to perfection if you desire.
+                                        </div>
+                                        </p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review3.jpg"
+                                             alt="Card review 3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!--Second slide----------------------------------------------------------------------------------->
+                    <div class="carousel-item">
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <!--KAART REVIEW 4--------------------------------------------------------------------->
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Brendan Powell </h4>
+                                        <p class="card-text">Greg and Leko were amazing!!! Will be
+                                            fishing with them
+                                            again Mos Def!
+                                            Great cooks and guides!</p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review4.jpg"
+                                             alt="Card review 4">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 5------------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Michele Meyer</h4>
+                                        <p class="card-text">So incredibly blessed to have had time
+                                            to spend with Darvin
+                                            (and Raul) during our time in Caye Caulker.
+                                            <a class="" data-toggle="collapse"
+                                               href="#collapseKaart5"
+                                               role="button" aria-expanded="false"
+                                               aria-controls="collapseExample"><i class="text-info">read
+                                                more...</i>
+                                            </a>
+                                        <div class="collapse" id="collapseKaart5">
+                                            He provided us an amazing tour of
+                                            the island and the barrier reef. So accommodating and
+                                            knowledgeable.
+                                            Would definitely recommend them, and will for sure
+                                            return for another
+                                            adventure.
+                                            Thank you Maria from Buccaneers Palapa in Corozal
+                                            (Consejo Shores) for the
+                                            recommendation.
+                                            Would also for sure commend visiting her for the best
+                                            rum punch and food in
+                                            Belize.
+                                        </div>
+                                        </p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review5.jpg"
+                                             alt="Card review 5">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 6------------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Kathy Kilgallon</h4>
+                                        <p class="card-text">Super fun!! What a wonderful trip we
+                                            had. Stunning
+                                            snorkeling,
+                                            ceviche and food extraordinare,
+                                            <a class="" data-toggle="collapse"
+                                               href="#collapseKaart6"
+                                               role="button" aria-expanded="false"
+                                               aria-controls="collapseExample"><i class="text-info">read
+                                                more...</i>
+                                            </a>
+                                        <div class="collapse" id="collapseKaart6">
+                                            capable crew and perfect weather 🤩🧜‍♂️🐠🌴🌊
+                                        </div>
+                                        </p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review6.jpg"
+                                             alt="Card review 6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Third slide------------------------------------------------------------------------------------>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-2">
+                                    <!--KAART REVIEW 7----------------------------------------------------------------->
+                                    <div class="card-body">
+                                        <h4 class="card-title">Jeff Murrell</h4>
+                                        <p class="card-text">Excellent value and really nice people.
+                                            We are calling
+                                            Liberty
+                                            first next trip. Thanks for a great time!</p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review7.jpg"
+                                             alt="Card review 7">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 8------------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">DjBlake Hunter</h4>
+                                        <p class="card-text">Caught a bunch of fish with captain
+                                            Wilbur !!! Mark the
+                                            deckhand was awesome ! Mark grilled our fish,
+                                            <a class="" data-toggle="collapse"
+                                               href="#collapseKaart8"
+                                               role="button" aria-expanded="false"
+                                               aria-controls="collapseExample"><i class="text-info">read
+                                                more...</i>
+                                            </a>
+                                        <div class="collapse" id="collapseKaart8">
+                                            it was tasty !!! 5 stars ⭐️⭐️⭐️⭐️⭐
+                                        </div>
+                                        </p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review8.jpg"
+                                             alt="Card review 8">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--KAART REVIEW 9------------------------------------------------------------------------->
+                            <div class="col-md-4 clearfix d-none d-md-block">
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Alexia Cros-Saget</h4>
+                                        <p class="card-text">Perfect expérience with very very kind
+                                            people ! Raoul is
+                                            the best captain ! Small sailing, and wild consciousenes
+                                            !</p>
+                                        <img class="rounded-circle img-thumbnail"
+                                             src="img/review9.jpg"
+                                             alt="Card review 9">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ABOUT US----------------------------------------------------------------------------------------------------------->
+<div class="container-fluid ourtours">
+    <div class="row">
+        <div class="col-lg-6 text-lg-right px-5 my-auto">
+            <h2 class="titel text-right"> About us</h2>
+            <p>Hi, my name is Darvin. I have been fishing and sailing the local Belize waters for
+                over 15 years.
+                We love Belize and are looking forward to sharing its beauty, history and culture
+                with you.<br>
+                We are a family owned business.</p>
+            <ul class="nav justify-content-end social-medie">
+                <li class="px-2">
+                    <a href="https://www.facebook.com/Liberty-tours-572869006251448/"
+                       target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#">
+                        <i class="fab fa-youtube-square" data-toggle="modal"
+                           data-target="#YouTubeModal"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="https://instagram.com/liberty_tours_?igshid=do5kvg193h96"
+                       target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="#par5">
+                        <i class="fas fa-envelope-square"></i>
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a href="https://www.tripadvisor.be/Attraction_Review-g291963-d3923287-Reviews-Liberty_Sailing_Tours-Caye_Caulker_Belize_Cayes.html"
+                       target="_blank">
+                        <i class="fab fa-tripadvisor"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-6 align-content-md-end">
+            <img class="img-fluid mt-4" alt="" src="img/Boat-Cancun-private-boat-fiesta.jpg">
+        </div>
+    </div>
+</div>
+<!--YOUTUBE MODAL------------------------------------------------------------------------------------------------------>
+<div class="modal fade" id="YouTubeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h4 class="modal-title" id="myModalLabel">Liberty Sailing Tours Belize</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="415" src="https://www.youtube.com/embed/84MMKDwHBmg"
+                        frameborder="0"
+                        allow="accelerometer; autoplay;
+                        encrypted-media; gyroscope;
+                        picture-in-picture" allowfullscreen>
+
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<!--OUR CAPTIANS------------------------------------------------------------------------------------------------------->
+<div class="captians py-4 my-3 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <h3 class="titel titel2"> Our Captians</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="img/captian1.jpg" class="rounded-circle">
+                <p>Chawi</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/captian2.jpg" class="rounded-circle">
+                <p>Greg</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/captian3.jpg" class="rounded-circle">
+                <p>Adrian</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- IMAGE GALLERY----------------------------------------------------------------------------------------------------->
+<p id="par4" class="anchoredpar4"/>
+<div class="team my-5">
+    <div class="container">
+        <h2 class="titel">Image Gallery</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/snorkeling.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/new_catamaran.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/island_night.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/lobster_grill.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/party.jpeg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/turtle.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/sailingboot.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/sailingtours.jpg">
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 my-3">
+                <div class="cardgallery shadow">
+                    <img class="card-img-top" alt="" src="img/sunset5.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CONTACT US--------------------------------------------------------------------------------------------------------->
+<p id="par5" class="anchoredpar5"/>
+<div class="contact py-5 ourtours">
+    <div class="container">
+        <h2 class="section-heading mb-5 titel">Contact us</h2>
+        <div class="row">
+            <div class="col-lg-6 my-auto">
+                <!--GOOGLE MAPS---------------------------------------------------------------------------------------->
+                <div id="map-container-google-1" class="z-depth-1-half map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15200.191393270823!2d-88.0252062!3d17.7423845!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc46c72592f45dff8!2sLiberty%20SailingTours!5e0!3m2!1snl!2sbe!4v1585337259789!5m2!1snl!2sbe"
+                            width="100%" height="550"
+                            frameborder="0" style="border:0;"
+                            allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <form action="contact.php" method="post" id="form"class="col-lg-6 contact-form"  >
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                           placeholder="Enter your e-mailaddress here" name="cf_email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email
+                        with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name here" name="cf_name">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp">WhatsApp</label>
+                    <input type="text" class="form-control" id="whatsapp" placeholder="Enter your whatsapp-number here" name="cf_whatsapp">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea type="email" class="form-control" id="message" rows="5"
+                              placeholder="Enter your message here" name="cf_message"></textarea>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="chb" name="newsletter">
+                    <label for="chb" class="form-check-label">Subscribe to our newsletter</label>
+                </div>
+                <button type="submit" formaction="contact.php" class="btn btn-lg btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!--FOOTER------------------------------------------------------------------------------------------------------------->
+<footer class="footer pt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <a class="navbar-brand py-3 text-md-center w-100" href="#par1">Liberty Sailing Tours</a>
+                <p>email: Darvin@libertytours.bz<br>
+                We are now conveniently located on Avenida Langosta, across the street from the Credit Union<br>
+                Avenida Langosta, Caye Caulker, BZ<br>
+                +501-622-3848 or 629-5315<br>
+                Hours<br>7:00am - 6:00pm Everyday</p>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/Liberty-tours-572869006251448/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://instagram.com/liberty_tours_?igshid=do5kvg193h96" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fab fa-youtube-square" data-toggle="modal"
+                                                        data-target="#YouTubeModal"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.tripadvisor.be/Attraction_Review-g291963-d3923287-Reviews-Liberty_Sailing_Tours-Caye_Caulker_Belize_Cayes.html"
+                        target="_blank"><i class="fab fa-tripadvisor"></i></a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted py-3">Copyright by TJ &copy 2020 </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--JavaScript--------------------------------------------------------------------------------------------------------->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--SCRIPT VOOR DE CAROUSEL-------------------------------------------------------------------------------------------->
+<script>$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+    var next = $(this).next();
+    if (!next.length) {
+        next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});
+</script>
+
+<!--SCRIPT OM DE HAMBURGER TERUG TE LATEN SLUITEN NA KLIKKEN OP DE LINK------------------------------------------------>
+<script>
+    $(".navbar-nav li a:not('.dropdown-toggle')") .on('click',
+        function () { $('.navbar-collapse').collapse('hide');
+    });
+</script>
+</body>
+</html> 
